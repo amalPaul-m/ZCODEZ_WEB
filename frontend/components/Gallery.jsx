@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 export default function Gallery() {
   const onImgError = (e) => {
@@ -15,13 +15,13 @@ export default function Gallery() {
           <span className="sec-tag">Blogs and News</span>
           <h2 className="sec-h">Latest Posts<span className="grad">.</span></h2>
           <p className="blogs-desc">
-            We regularly add new content to our website — articles, blogs, and informative content.
+            We regularly add new content to our website â€” articles, blogs, and informative content.
           </p>
         </div>
         <div className="blog-grid reveal d1">
-          <a className="blog-card" href="https://bpract.com/how-much-does-mobile-app-development-cost-in-2026/" target="_blank">
+          <a className="blog-card" href="https://zcodez.com/how-much-does-mobile-app-development-cost-in-2026/" target="_blank">
             <img
-              src="https://bpract.com/wp-content/uploads/2026/02/closeup-shot-entrepreneur-working-from-home-his-personal-finances-savings-1-825x550.jpg"
+              src="https://zcodez.com/wp-content/uploads/2026/02/closeup-shot-entrepreneur-working-from-home-his-personal-finances-savings-1-825x550.jpg"
               alt="Blog 1"
               data-fallback="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&q=75"
               onError={onImgError}
@@ -32,9 +32,9 @@ export default function Gallery() {
               <div className="blog-author">By Reja Rapheekh</div>
             </div>
           </a>
-          <a className="blog-card" href="https://bpract.com/ai-in-software-development-role-benefits/" target="_blank">
+          <a className="blog-card" href="https://zcodez.com/ai-in-software-development-role-benefits/" target="_blank">
             <img
-              src="https://bpract.com/wp-content/uploads/2026/01/6597472-g-bh-825x550.jpg"
+              src="https://zcodez.com/wp-content/uploads/2026/01/6597472-g-bh-825x550.jpg"
               alt="Blog 2"
               data-fallback="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=600&q=75"
               onError={onImgError}
@@ -45,7 +45,7 @@ export default function Gallery() {
               <div className="blog-author">By Reja Rapheekh</div>
             </div>
           </a>
-          <a className="blog-card" href="https://bpract.com/latest-trends-in-web-development-for-2026/" target="_blank">
+          <a className="blog-card" href="https://zcodez.com/latest-trends-in-web-development-for-2026/" target="_blank">
             <img
               src="https://bpract.com/wp-content/uploads/2026/01/programming-background-collage-3-824x550.jpg"
               alt="Blog 3"
@@ -66,6 +66,7 @@ export default function Gallery() {
     </section>
   );
 }
+
 
 
 

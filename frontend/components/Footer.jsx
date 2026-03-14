@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 export default function Footer() {
   const onLogoError = (e) => {
@@ -19,12 +19,12 @@ export default function Footer() {
           <div className="footer-col">
             <img
               className="footer-logo-img"
-              src="https://bpract.com/wp-content/uploads/2023/03/bpractfooterlogo.webp"
-              alt="Bpract"
+              src="https://res.cloudinary.com/dfig2zrrd/image/upload/v1773466147/zcodez-logo_sm4lnr.png"
+              alt="zcodez"
               onError={onLogoError}
             />
             <div className="footer-logo-txt is-hidden" id="flt">b<span className="grad">pract</span></div>
-            <p className="footer-tag">"The term 'Bpract' is the quintessence of 'being practical with best practices', and with this vision, bpract has been growing fast ever since its inception in 2015."</p>
+            <p className="footer-tag">"The term 'zcodez' is the quintessence of 'being practical with best practices', and with this vision, zcodez has been growing fast ever since its inception in 2015."</p>
             <div className="footer-contacts">
               <div className="fc-item">
                 <span className="fc-icon">
@@ -41,7 +41,7 @@ export default function Footer() {
                     <path d="m22 7-10 7L2 7" className="icon-stroke" />
                   </svg>
                 </span>
-                <a href="mailto:info@bpract.com">info@bpract.com</a>
+                <a href="mailto:info@zcodez.com">info@zcodez.com</a>
               </div>
               <div className="fc-item">
                 <span className="fc-icon">
@@ -68,14 +68,14 @@ export default function Footer() {
           <div className="footer-col">
             <h6>Company</h6>
             <div className="footer-links">
-              <a href="#">Bpract Academy</a>
+              <a href="#">zcodez Academy</a>
               <a href="#">What we do</a>
               <a href="#">Who we are</a>
               <a href="#">Team</a>
               <a href="#">Careers</a>
               <a href="#">Blogs</a>
               <a href="#">Reach us</a>
-              <a href="#">Life at Bpract</a>
+              <a href="#">Life at zcodez</a>
             </div>
           </div>
           <div className="footer-col">
@@ -97,16 +97,17 @@ export default function Footer() {
           <a href="#">Download company brochure</a>
         </div>
         <div className="footer-bar">
-          <div className="footer-copy">©2025 All rights reserved by Bpract Software Solutions LLP.</div>
+          <div className="footer-copy">Â© 2025 All rights reserved by zcodez Software Solutions LLP.</div>
           <div className="footer-socials">
-            <a href="https://www.facebook.com/Bpract/" target="_blank">f</a>
-            <a href="https://www.instagram.com/bpract/" target="_blank">ig</a>
-            <a href="https://twitter.com/bpract" target="_blank">x</a>
-            <a href="https://in.linkedin.com/company/bpract-software-solutions-llp" target="_blank">in</a>
+            <a href="https://www.facebook.com/zcodez/" target="_blank">f</a>
+            <a href="https://www.instagram.com/zcodez/" target="_blank">ig</a>
+            <a href="https://twitter.com/zcodez" target="_blank">x</a>
+            <a href="https://in.linkedin.com/company/zcodez-software-solutions-llp" target="_blank">in</a>
           </div>
         </div>
       </div>
     </footer>
   );
 }
+
 

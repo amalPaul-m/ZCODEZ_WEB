@@ -13,8 +13,8 @@ export default function Navbar() {
         <a className="nav-logo" href="#hero" id="navLogoLink">
           <img
             id="navLogoImg"
-            src="https://bpract.com/wp-content/themes/bpract/assets/images/bpract-logo-white.webp"
-            alt="Bpract"
+            src="https://res.cloudinary.com/dfig2zrrd/image/upload/v1773466147/zcodez-logo_sm4lnr.png"
+            alt="zcodez"
             onError={onLogoError}
           />
           <span className="nav-logo-text is-hidden" id="navLogoTxt">
@@ -50,6 +50,7 @@ export default function Navbar() {
     </nav>
   );
 }
+
 
 
 

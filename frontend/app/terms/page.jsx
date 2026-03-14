@@ -1,4 +1,4 @@
-﻿export default function TermsPage() {
+export default function TermsPage() {
   return (
     <main className="legal">
       <div className="wrap">

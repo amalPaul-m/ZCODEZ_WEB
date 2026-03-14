@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 export default function Services() {
   const onImgError = (e) => {
@@ -13,8 +13,8 @@ export default function Services() {
       <svg className="spin-ring services-ring" viewBox="0 0 408 408">
         <defs>
           <linearGradient id="rg1" x1="75%" y1="83%" x2="11%" y2="16%">
-            <stop offset="0" stopColor="#3db54a" />
-            <stop offset="1" stopColor="#a0cd4e" />
+            <stop offset="0" stopColor="#3f3db5" />
+            <stop offset="1" stopColor="#4e78cd" />
           </linearGradient>
         </defs>
         <circle cx="204" cy="204" r="190" fill="none" stroke="url(#rg1)" strokeWidth="28" opacity=".4" />
@@ -99,6 +99,7 @@ export default function Services() {
     </section>
   );
 }
+
 
 
 

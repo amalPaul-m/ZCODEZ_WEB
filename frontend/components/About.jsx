@@ -1,18 +1,18 @@
-﻿export default function About() {
+export default function About() {
   return (
     <>
       <section className="sec sec-alt" id="about">
         <div className="pbg" data-speed="0.3"></div>
 
         <svg className="deco d1 about-deco-1" viewBox="0 0 14 14">
-          <circle cx="7" cy="7" r="5" fill="#3db54a" />
+          <circle cx="7" cy="7" r="5" fill="#3d77b5" />
         </svg>
         <svg className="deco d2 about-deco-2" viewBox="0 0 36 36">
-          <circle cx="18" cy="18" r="15" fill="none" stroke="#3db54a" strokeWidth="2" />
+          <circle cx="18" cy="18" r="15" fill="none" stroke="#3d77b5" strokeWidth="2" />
         </svg>
         <svg className="deco d3 about-deco-3" viewBox="0 0 40 40">
-          <circle cx="20" cy="20" r="16" fill="none" stroke="#3db54a" strokeWidth="2" />
-          <circle cx="20" cy="20" r="5" fill="#3db54a" />
+          <circle cx="20" cy="20" r="16" fill="none" stroke="#3d77b5" strokeWidth="2" />
+          <circle cx="20" cy="20" r="5" fill="#3d77b5" />
         </svg>
 
         <div className="wrap">
@@ -39,7 +39,7 @@
           </div>
           <div className="reveal d2 about-sub">
             <p>
-              Bpract is a successful business venture recognized with awards, providing high-quality software solutions to businesses all over the world. Established in 2015, Bpract began its journey as the <a href="#" className="link-blue">best branding agency</a>, and has grown into a leading software development company. Each project is handled with innovative supervision and advanced technology, granting a creative platform that enhances productivity and efficiency.
+              zcodez is a successful business venture recognized with awards, providing high-quality software solutions to businesses all over the world. Established in 2015, zcodez began its journey as the <a href="#" className="link-blue">best branding agency</a>, and has grown into a leading software development company. Each project is handled with innovative supervision and advanced technology, granting a creative platform that enhances productivity and efficiency.
             </p>
           </div>
         </div>
@@ -70,6 +70,7 @@
     </>
   );
 }
+
 
 
 

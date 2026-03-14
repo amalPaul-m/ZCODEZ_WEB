@@ -1,9 +1,9 @@
-﻿import './globals.css';
+import './globals.css';
 import CookieBanner from '../components/CookieBanner';
 
 export const metadata = {
-  title: 'Software Development Company in India | Bpract',
-  description: 'Bpract Software Solutions LLP — software development, design, and digital services.'
+  title: 'Software Development Company in India | zcodez',
+  description: 'zcodez Software Solutions LLP for software development, design, and digital services.'
 };
 
 export const viewport = {

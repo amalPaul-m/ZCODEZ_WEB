@@ -1,4 +1,4 @@
-﻿export default function Hero() {
+export default function Hero() {
   return (
     <>
       <section id="hero">
@@ -26,7 +26,7 @@
             </div>
             <div className="hero-right">
               <p className="hero-para">
-                Bpract is a trusted software development company in India helping startups and enterprises build secure, scalable, and performance-driven digital products. We specialize in custom software development, web and mobile applications, cloud solutions, and UI/UX design that support real business growth.
+                zcodez is a trusted software development company in India helping startups and enterprises build secure, scalable, and performance-driven digital products. We specialize in custom software development, web and mobile applications, cloud solutions, and UI/UX design that support real business growth.
               </p>
               <div className="hero-btns">
                 <a href="#cta" className="btn btn-g"><span>Connect with us</span></a>
@@ -65,6 +65,7 @@
     </>
   );
 }
+
 
 
 

@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 export default function WhyChooseUs() {
   const onImgError = (e) => {
@@ -45,20 +45,20 @@ export default function WhyChooseUs() {
 
         <div className="community-box reveal d2">
           <svg className="deco d1 why-deco-1" viewBox="0 0 14 14">
-            <circle cx="7" cy="7" r="5" fill="#3db54a" />
+            <circle cx="7" cy="7" r="5" fill="#3f3db5" />
           </svg>
           <svg className="deco d2 why-deco-2" viewBox="0 0 36 36">
-            <circle cx="18" cy="18" r="15" fill="none" stroke="#3db54a" strokeWidth="2" />
+            <circle cx="18" cy="18" r="15" fill="none" stroke="#3f3db5" strokeWidth="2" />
           </svg>
           <div className="community-inner">
             <div className="community-text">
               <h3>Join our community<span className="grad">.</span></h3>
-              <p>Bpract is an innovative software company founded in 2015 that contributes expert solutions to clients worldwide. We have an experienced team of professionals who specialize in web design and development, digital marketing, software design, CMS development, UI/UX design, and many more.</p>
+              <p>zcodez is an innovative software company founded in 2015 that contributes expert solutions to clients worldwide. We have an experienced team of professionals who specialize in web design and development, digital marketing, software design, CMS development, UI/UX design, and many more.</p>
               <p>As the digital era is transforming like never before, adapting to new technologies is crucial for any business. As a trusted <a href="#" className="link-blue">software development company in Calicut</a>, we offer incredible web and software development services to various businesses and help them stay ahead of the curve.</p>
             </div>
             <div className="community-img">
               <img
-                src="https://bpract.com/wp-content/uploads/2023/08/INTROOO.webp"
+                src="https://zcodez.com/wp-content/uploads/2023/08/INTROOO.webp"
                 alt="Community"
                 data-fallback="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&q=80"
                 onError={onImgError}
@@ -70,6 +70,7 @@ export default function WhyChooseUs() {
     </section>
   );
 }
+
 
 
 

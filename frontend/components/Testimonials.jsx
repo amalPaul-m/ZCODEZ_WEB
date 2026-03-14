@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 export default function Testimonials() {
   const onImgError = (e) => {
@@ -11,14 +11,14 @@ export default function Testimonials() {
     <section className="sec sec-alt" id="testimonials">
       <div className="pbg" data-speed="0.3"></div>
       <svg className="deco d1 testi-deco-1" viewBox="0 0 14 14">
-        <circle cx="7" cy="7" r="5" fill="#3db54a" />
+        <circle cx="7" cy="7" r="5" fill="#3d88e3" />
       </svg>
       <svg className="deco d2 testi-deco-2" viewBox="0 0 36 36">
-        <circle cx="18" cy="18" r="15" fill="none" stroke="#3db54a" strokeWidth="2" />
+        <circle cx="18" cy="18" r="15" fill="none" stroke="#3d88e3" strokeWidth="2" />
       </svg>
       <svg className="deco d3 testi-deco-3" viewBox="0 0 40 40">
-        <circle cx="20" cy="20" r="16" fill="none" stroke="#3db54a" strokeWidth="2" />
-        <circle cx="20" cy="20" r="5" fill="#3db54a" />
+        <circle cx="20" cy="20" r="16" fill="none" stroke="#3d88e3" strokeWidth="2" />
+        <circle cx="20" cy="20" r="5" fill="#3d88e3" />
       </svg>
 
       <div className="wrap">
@@ -34,7 +34,7 @@ export default function Testimonials() {
               <div className="testi-author">
                 <img
                   className="testi-av"
-                  src="https://bpract.com/wp-content/uploads/2023/07/joe.webp"
+                  src="https://zcodez.com/wp-content/uploads/2023/07/joe.webp"
                   alt="Joe"
                   data-fallback="https://i.pravatar.cc/48?img=1"
                   onError={onImgError}
@@ -44,11 +44,11 @@ export default function Testimonials() {
             </div>
             <div className="testi-card">
               <div className="testi-q">"</div>
-              <p className="testi-txt">Choosing Bpract for our web development needs was the best decision we could have made. Their creative approach, attention to detail, and dedication to delivering a product that not only looks great but also performs flawlessly have significantly enhanced our online presence.</p>
+              <p className="testi-txt">Choosing zcodez for our web development needs was the best decision we could have made. Their creative approach, attention to detail, and dedication to delivering a product that not only looks great but also performs flawlessly have significantly enhanced our online presence.</p>
               <div className="testi-author">
                 <img
                   className="testi-av"
-                  src="https://bpract.com/wp-content/uploads/2023/03/juan.webp"
+                  src="https://zcodez.com/wp-content/uploads/2023/03/juan.webp"
                   alt="Juan Garcia"
                   data-fallback="https://i.pravatar.cc/48?img=2"
                   onError={onImgError}
@@ -58,11 +58,11 @@ export default function Testimonials() {
             </div>
             <div className="testi-card">
               <div className="testi-q">"</div>
-              <p className="testi-txt">BPract Software Solutions exceeded our expectations with their customizable software that integrates seamlessly into our existing workflows.</p>
+              <p className="testi-txt">zcodez Software Solutions exceeded our expectations with their customizable software that integrates seamlessly into our existing workflows.</p>
               <div className="testi-author">
                 <img
                   className="testi-av"
-                  src="https://bpract.com/wp-content/uploads/2023/07/javier.webp"
+                  src="https://zcodez.com/wp-content/uploads/2023/07/javier.webp"
                   alt="Javier Florez"
                   data-fallback="https://i.pravatar.cc/48?img=3"
                   onError={onImgError}
@@ -72,11 +72,11 @@ export default function Testimonials() {
             </div>
             <div className="testi-card">
               <div className="testi-q">"</div>
-              <p className="testi-txt">Bpract has transformed our digital marketing strategy with their innovative and tailored approaches. Their deep understanding of digital trends has propelled our brand to new heights.</p>
+              <p className="testi-txt">zcodez has transformed our digital marketing strategy with their innovative and tailored approaches. Their deep understanding of digital trends has propelled our brand to new heights.</p>
               <div className="testi-author">
                 <img
                   className="testi-av"
-                  src="https://bpract.com/wp-content/uploads/2023/07/laura.webp"
+                  src="https://zcodez.com/wp-content/uploads/2023/07/laura.webp"
                   alt="Laura Fernandez"
                   data-fallback="https://i.pravatar.cc/48?img=4"
                   onError={onImgError}
@@ -86,11 +86,11 @@ export default function Testimonials() {
             </div>
             <div className="testi-card">
               <div className="testi-q">"</div>
-              <p className="testi-txt">Working with Bpract on our software development project was an exceptional experience. Their dedication to understanding our industry and needs resulted in a product that exceeded our expectations.</p>
+              <p className="testi-txt">Working with zcodez on our software development project was an exceptional experience. Their dedication to understanding our industry and needs resulted in a product that exceeded our expectations.</p>
               <div className="testi-author">
                 <img
                   className="testi-av"
-                  src="https://bpract.com/wp-content/uploads/2023/07/Zihad.webp"
+                  src="https://zcodez.com/wp-content/uploads/2023/07/Zihad.webp"
                   alt="Md.Zihad A"
                   data-fallback="https://i.pravatar.cc/48?img=5"
                   onError={onImgError}
@@ -118,3 +118,4 @@ export default function Testimonials() {
     </section>
   );
 }
+

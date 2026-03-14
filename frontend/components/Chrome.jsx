@@ -4,10 +4,10 @@ export default function Chrome() {
 
       <div className="social-bar" id="socialBar">
         <ul>
-          <li><a href="https://www.facebook.com/Bpract/" target="_blank">f</a></li>
-          <li><a href="https://www.instagram.com/bpract/" target="_blank">ig</a></li>
-          <li><a href="https://twitter.com/bpract" target="_blank">x</a></li>
-          <li><a href="https://in.linkedin.com/company/bpract-software-solutions-llp" target="_blank">in</a></li>
+          <li><a href="https://www.facebook.com/zcodez/" target="_blank">f</a></li>
+          <li><a href="https://www.instagram.com/zcodez/" target="_blank">ig</a></li>
+          <li><a href="https://twitter.com/zcodez" target="_blank">x</a></li>
+          <li><a href="https://in.linkedin.com/company/zcodez-software-solutions-llp" target="_blank">in</a></li>
           <li><span className="lbl">Follow</span></li>
         </ul>
       </div>
@@ -28,28 +28,28 @@ export default function Chrome() {
         </div>
         <div className="panel-contact">
           <b>Get in touch with us</b>
-          <a href="mailto:info@bpract.com">info@bpract.com</a>
+          <a href="mailto:info@zcodez.com">info@zcodez.com</a>
           <a href="https://wa.me/918590137119" target="_blank">+91 8590137119</a>
         </div>
         <div className="panel-addr">
-          <b>Bpract Software Solutions LLP</b>
+          <b>zcodez Software Solutions LLP</b>
           Unit 1A, 4th floor, KSITIL,<br />
           Special Economic Zone, Cyberpark Campus,<br />
           Sahya building, Nillikkode P.O,<br />
           Kozhikode, 673017
         </div>
         <div className="panel-socials">
-          <a href="https://www.facebook.com/Bpract/" target="_blank">f</a>
-          <a href="https://www.instagram.com/bpract/" target="_blank">ig</a>
-          <a href="https://twitter.com/bpract" target="_blank">x</a>
-          <a href="https://in.linkedin.com/company/bpract-software-solutions-llp" target="_blank">in</a>
+          <a href="https://www.facebook.com/zcodez/" target="_blank">f</a>
+          <a href="https://www.instagram.com/zcodez/" target="_blank">ig</a>
+          <a href="https://twitter.com/zcodez" target="_blank">x</a>
+          <a href="https://in.linkedin.com/company/zcodez-software-solutions-llp" target="_blank">in</a>
         </div>
         <div className="panel-blob">
           <svg viewBox="0 0 1255 1304" preserveAspectRatio="none" className="panel-blob-svg">
             <defs>
               <linearGradient id="bG" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stopColor="#99ca4f" />
-                <stop offset="1" stopColor="#46ba4c" />
+                <stop offset="0" stopColor="#3d51bf" />
+                <stop offset="1" stopColor="#4f74ca" />
               </linearGradient>
             </defs>
             <path
@@ -72,6 +72,7 @@ export default function Chrome() {
     </>
   );
 }
+
 
 
 

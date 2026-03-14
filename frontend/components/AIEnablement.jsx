@@ -3,7 +3,7 @@
     <section className="sec sec-alt" id="ai">
       <div className="pbg" data-speed="0.25"></div>
       <svg className="deco d1 ai-deco-1" viewBox="0 0 14 14">
-        <circle cx="7" cy="7" r="5" fill="#3db54a" />
+        <circle cx="7" cy="7" r="5" fill="#3f3db5" />
       </svg>
       <svg className="deco d2 ai-deco-2" viewBox="0 0 36 36">
         <circle cx="18" cy="18" r="15" fill="none" stroke="#3db54a" strokeWidth="2" />
