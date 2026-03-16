@@ -36,7 +36,7 @@ export default function Hero() {
                   </span>
                 </h1>
                 <p className="hero-bottom-note">Revolutionizing Future Digitally</p>
-                <a href="#contact" className="btn btn-g hero-cta-button"><span>LETS HERE YOUR IDEAS</span></a>
+                <a href="/contact" className="btn btn-g hero-cta-button"><span>LETS HERE YOUR IDEAS</span></a>
               </div>
             </div>
           </div>
