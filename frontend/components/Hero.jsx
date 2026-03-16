@@ -31,7 +31,9 @@ export default function Hero() {
                 </h1> */}
 
                 <h1 className="h-title hero-title-text">
-                  <span className="w">Simplifying IT Consulting, Outsourcing & Development</span>
+                  <span className="w" style={{ fontFamily: "Outfit", fontWeight: '800', letterSpacing: '0.01em' }}>
+                    Simplifying IT Consulting, Outsourcing & Development
+                  </span>
                 </h1>
                 <p className="hero-bottom-note">Revolutionizing Future Digitally</p>
                 <a href="#contact" className="btn btn-g hero-cta-button"><span>LETS HERE YOUR IDEAS</span></a>

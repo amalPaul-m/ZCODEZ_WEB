@@ -23,12 +23,11 @@ export default function Navbar() {
         </a>
 
         <ul className="nav-links">
-          <li><a href="#about">Credo</a></li>
-          <li><a href="#services">Capabilities</a></li>
-          <li><a href="#ai">Products</a></li>
-          <li><a href="#why">Careers</a></li>
-          
-          <li><a href="#cta">Get in Touch</a></li>
+          <li><a href="/#about">Credo</a></li>
+          <li><a href="/#services">Capabilities</a></li>
+          <li><a href="/#ai">Products</a></li>
+          <li><a href="/#why">Careers</a></li>
+          <li><a href="/#cta">Get in Touch</a></li>
         </ul>
 
         <div className="nav-right">

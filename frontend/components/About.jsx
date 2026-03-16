@@ -34,12 +34,27 @@ export default function About() {
             </svg>
             <h2 className="intro-head about-intro-title">Web &amp; Software Development Company</h2>
             <p className="about-intro-p">
-              A highly acclaimed software development venture, creating compelling products globally.
+              At ZCODEZ LLP, we transform complex challenges into elegant, scalable software solutions. As a dedicated technology partnership, we bridge the gap between visionary ideas and robust digital reality. We are the right fit for companies seeking digital tranformation with cutting edge AI.
             </p>
           </div>
           <div className="reveal d2 about-sub">
             <p>
-              zcodez is a successful business venture recognized with awards, providing high-quality software solutions to businesses all over the world. Established in 2015, zcodez began its journey as the <a href="#" className="link-blue">best branding agency</a>, and has grown into a leading software development company. Each project is handled with innovative supervision and advanced technology, granting a creative platform that enhances productivity and efficiency.
+              We believe technology should be a powerful enabler, not a bottleneck. Whether you’re a startup seeking a Minimum Viable Product (MVP), a growing business needing to modernize legacy systems, or an enterprise pursuing innovation, we provide the technical expertise and collaborative spirit to guide your journey.
+              Our Promise: To deliver intelligent software engineered for performance, built with precision, and designed for the future.            </p>
+          </div>
+          <div className="reveal d2 about-sub">
+            <p><b>Why Partner With ZCODEZ LLP?</b></p>
+            <p>
+              <b>Strategic Partnership:</b> We act as your dedicated technology team, invested in your long-term growth.            
+            </p>
+            <p>
+              <b>Full-Cycle Expertise:</b> From concept and design to development, deployment, and ongoing support.            
+            </p>
+            <p>
+              <b>Agile & Transparent:</b> Collaborative processes with clear communication at every milestone.
+            </p>
+            <p>
+              <b>Quality-Centric Approach:</b> Commitment to secure, maintainable, and well-documented code.
             </p>
           </div>
         </div>

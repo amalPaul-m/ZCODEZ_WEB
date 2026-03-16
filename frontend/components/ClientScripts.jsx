@@ -106,12 +106,17 @@ export default function ClientScripts() {
     };
     document.addEventListener('keydown', onKey);
 
-    const linkEls = Array.from(document.querySelectorAll('a[href^="#"]'));
+    const linkEls = Array.from(document.querySelectorAll('a[href^="#"], a[href^="/#"]'));
     const onLinkClick = (e) => {
       const a = e.currentTarget;
-      const id = a.getAttribute('href');
-      if (id && id.length > 1) {
-        const el = document.querySelector(id);
+      let href = a.getAttribute('href') || '';
+
+      if (href.startsWith('/#')) {
+        href = href.slice(1);
+      }
+
+      if (href && href.length > 1) {
+        const el = document.querySelector(href);
         if (el) {
           e.preventDefault();
           el.scrollIntoView({ behavior: 'smooth', block: 'start' });

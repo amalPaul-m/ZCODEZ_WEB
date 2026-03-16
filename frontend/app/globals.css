@@ -1,4 +1,5 @@
 @import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import "../styles/animations.css";
 
 /* â”€â”€â”€ VARIABLES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
@@ -84,7 +85,7 @@ body.light #nav.stuck{background:rgba(244,244,244,.96)}
 
 .nav-wrap{
   max-width:1340px;margin:0 auto;
-  padding:40px 36px 0 36px;height:100%;
+  padding:40px 36px 40px 36px;height:100%;
   display:flex;align-items:center;
 }
 

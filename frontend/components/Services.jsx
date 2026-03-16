@@ -1,12 +1,39 @@
 'use client';
 
-export default function Services() {
-  const onImgError = (e) => {
-    const img = e.currentTarget;
-    const fallback = img.dataset.fallback;
-    if (fallback && img.src !== fallback) img.src = fallback;
-  };
+import Link from 'next/link';
 
+const mainServices = [
+  {
+    id: 1,
+    title: 'Product Engineering',
+    short: 'Design, build, and scale cutting-edge digital products.',
+    img: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80',
+    alt: 'Product Engineering',
+  },
+  {
+    id: 2,
+    title: 'SAP & Salesforce',
+    short: 'Enterprise-grade ERP solutions with cloud-ready integration.',
+    img: 'https://images.unsplash.com/photo-1581090871659-6ab4d3f4250f?w=900&q=80',
+    alt: 'SAP and Salesforce',
+  },
+  {
+    id: 3,
+    title: 'Data Science & AI',
+    short: 'Predictive analytics and scalable AI systems for business transformation.',
+    img: 'https://images.unsplash.com/photo-1555949963-aa79dcee981d?w=900&q=80',
+    alt: 'Data Science and AI',
+  },
+  {
+    id: 4,
+    title: 'Cyber Security',
+    short: 'Threat detection, vulnerability assessments, and compliance protection.',
+    img: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=900&q=80',
+    alt: 'Cyber Security',
+  },
+];
+
+export default function Services() {
   return (
     <section className="sec" id="services">
       <div className="pbg" data-speed="0.4"></div>
@@ -25,75 +52,34 @@ export default function Services() {
           <span className="sec-tag">What We Do</span>
           <h2 className="sec-h">Services<span className="grad">.</span></h2>
         </div>
+
         <div className="svc-layout">
           <div className="svc-left reveal d1">
-            <div className="svc-item on" data-svc="0">
-              <div className="svc-n">1</div>
-              <div>
-                <div className="svc-title">UI/UX Designing</div>
-                <p className="svc-desc">We specialize in cutting-edge UI/UX design services. We are always available.</p>
+            {mainServices.map((svc) => (
+              <div className="svc-item" key={svc.id}>
+                <div className="svc-n">{svc.id}</div>
+                <div>
+                  <div className="svc-title">{svc.title}</div>
+                  <p className="svc-desc">{svc.short}</p>
+                </div>
               </div>
-            </div>
-            <div className="svc-item" data-svc="1">
-              <div className="svc-n">2</div>
-              <div>
-                <div className="svc-title">Digital Marketing</div>
-                <p className="svc-desc">We offer digital marketing services for your business. We are highly passionate about digital marketing.</p>
-              </div>
-            </div>
-            <div className="svc-item" data-svc="2">
-              <div className="svc-n">3</div>
-              <div>
-                <div className="svc-title">Mobile App Development</div>
-                <p className="svc-desc">Excellent quality, high performance, and efficiency are assured for our Android, iOS, and web applications.</p>
-              </div>
-            </div>
-            <div className="svc-item" data-svc="3">
-              <div className="svc-n">4</div>
-              <div>
-                <div className="svc-title">Web Application &amp; Software Development</div>
-                <p className="svc-desc">We build web applications for your business.</p>
-              </div>
-            </div>
+            ))}
+
             <div className="services-more">
-              <a href="#" className="btn btn-g"><span>More Services</span></a>
+              <Link href="/services" className="btn btn-g">
+                <span>More Services</span>
+              </Link>
             </div>
           </div>
 
           <div className="svc-right reveal d2">
-            <div className="svc-img on">
-              <img
-                src="https://bpract.com/wp-content/uploads/2023/07/uiux-1.webp"
-                alt="UI/UX"
-                data-fallback="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=700&q=80"
-                onError={onImgError}
-              />
-            </div>
-            <div className="svc-img">
-              <img
-                src="https://bpract.com/wp-content/uploads/2023/07/digital-marketing.webp"
-                alt="Digital Marketing"
-                data-fallback="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&q=80"
-                onError={onImgError}
-              />
-            </div>
-            <div className="svc-img">
-              <img
-                src="https://bpract.com/wp-content/uploads/2023/07/appdev.webp"
-                alt="App Dev"
-                data-fallback="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=700&q=80"
-                onError={onImgError}
-              />
-            </div>
-            <div className="svc-img">
-              <img
-                src="https://bpract.com/wp-content/uploads/2023/07/developers-img.webp"
-                alt="Web Dev"
-                data-fallback="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=700&q=80"
-                onError={onImgError}
-              />
-            </div>
+            {mainServices.map((svc, index) => (
+              <div className={`svc-img ${index === 0 ? 'on' : ''}`} key={`svc-img-${svc.id}`}>
+                <img src={svc.img} alt={svc.alt} />
+              </div>
+            ))}
           </div>
+          
         </div>
       </div>
     </section>

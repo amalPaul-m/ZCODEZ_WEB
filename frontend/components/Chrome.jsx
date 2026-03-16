@@ -20,11 +20,11 @@ export default function Chrome() {
         <p className="panel-title">Do you have an idea in your mind?</p>
         <p className="panel-para">Any concept or idea should find its way. Whether you are a start-up or an established firm, you can share your ideas and perspectives with us. We ensure our guidance.</p>
         <div className="panel-links">
-          <a href="#about">Credo</a>
-          <a href="#services">Capabilities</a>
-          <a href="#ai">Products</a>
-          <a href="#why">Careers</a>
-          <a href="#cta">Get in Touch</a>
+          <a href="/#about">Credo</a>
+          <a href="/#services">Capabilities</a>
+          <a href="/#ai">Products</a>
+          <a href="/#why">Careers</a>
+          <a href="/#cta">Get in Touch</a>
         </div>
         <div className="panel-contact">
           <b>Get in touch with us</b>
