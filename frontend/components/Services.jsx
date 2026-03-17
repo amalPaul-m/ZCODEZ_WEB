@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 
 const mainServices = [
@@ -75,18 +76,19 @@ export default function Services() {
           <div className="svc-right reveal d2">
             {mainServices.map((svc, index) => (
               <div className={`svc-img ${index === 0 ? 'on' : ''}`} key={`svc-img-${svc.id}`}>
-                <img src={svc.img} alt={svc.alt} />
+                <Image
+                  src={svc.img}
+                  alt={svc.alt}
+                  fill
+                  sizes="(max-width: 1024px) 80vw, 40vw"
+                  style={{ objectFit: 'cover' }}
+                />
               </div>
             ))}
           </div>
-          
+
         </div>
       </div>
     </section>
   );
 }
-
-
-
-
-

@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 export default function WhyChooseUs() {
   const onImgError = (e) => {
     const img = e.currentTarget;
@@ -57,10 +59,12 @@ export default function WhyChooseUs() {
               <p>As the digital era is transforming like never before, adapting to new technologies is crucial for any business. As a trusted <a href="#" className="link-blue">software development company in Calicut</a>, we offer incredible web and software development services to various businesses and help them stay ahead of the curve.</p>
             </div>
             <div className="community-img">
-              <img
+              <Image
                 src="https://zcodez.com/wp-content/uploads/2023/08/INTROOO.webp"
                 alt="Community"
                 data-fallback="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&q=80"
+                width={300}
+                height={220}
                 onError={onImgError}
               />
             </div>
@@ -70,8 +74,3 @@ export default function WhyChooseUs() {
     </section>
   );
 }
-
-
-
-
-

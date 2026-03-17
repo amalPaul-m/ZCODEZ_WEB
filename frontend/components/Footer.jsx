@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 export default function Footer() {
   const onLogoError = (e) => {
     e.currentTarget.style.display = 'none';
@@ -17,14 +19,16 @@ export default function Footer() {
       <div className="wrap">
         <div className="footer-grid">
           <div className="footer-col">
-            <img
+            <Image
               className="footer-logo-img"
               src="https://res.cloudinary.com/dfig2zrrd/image/upload/v1773466147/zcodez-logo_sm4lnr.png"
               alt="zcodez"
+              width={180}
+              height={56}
               onError={onLogoError}
             />
             <div className="footer-logo-txt is-hidden" id="flt">b<span className="grad">pract</span></div>
-            <p className="footer-tag">"The term 'zcodez' is the quintessence of 'being practical with best practices', and with this vision, zcodez has been growing fast ever since its inception in 2015."</p>
+            <p className="footer-tag">&quot;The term &apos;zcodez&apos; is the quintessence of &apos;being practical with best practices&apos;, and with this vision, zcodez has been growing fast ever since its inception in 2015.&quot;</p>
             <div className="footer-contacts">
               <div className="fc-item">
                 <span className="fc-icon">
@@ -109,5 +113,3 @@ export default function Footer() {
     </footer>
   );
 }
-
-

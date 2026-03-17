@@ -11,24 +11,29 @@ const defaultPrefs = {
   functional: false
 };
 
-export default function CookieBanner() {
-  const [open, setOpen] = useState(false);
-  const [showSettings, setShowSettings] = useState(false);
-  const [prefs, setPrefs] = useState(defaultPrefs);
+const getInitialState = () => {
+  if (typeof window === 'undefined') {
+    return { open: false, prefs: defaultPrefs };
+  }
 
-  useEffect(() => {
-    const stored = localStorage.getItem(STORAGE_KEY);
-    if (!stored) {
-      setOpen(true);
-    } else {
-      try {
-        const parsed = JSON.parse(stored);
-        setPrefs({ ...defaultPrefs, ...parsed });
-      } catch {
-        setOpen(true);
-      }
-    }
-  }, []);
+  const stored = window.localStorage.getItem(STORAGE_KEY);
+  if (!stored) {
+    return { open: true, prefs: defaultPrefs };
+  }
+
+  try {
+    const parsed = JSON.parse(stored);
+    return { open: false, prefs: { ...defaultPrefs, ...parsed } };
+  } catch {
+    return { open: true, prefs: defaultPrefs };
+  }
+};
+
+export default function CookieBanner() {
+  const [initial] = useState(getInitialState);
+  const [open, setOpen] = useState(initial.open);
+  const [showSettings, setShowSettings] = useState(false);
+  const [prefs, setPrefs] = useState(initial.prefs);
 
   useEffect(() => {
     if (!showSettings) return;
@@ -88,7 +93,7 @@ export default function CookieBanner() {
           >
             <div className="cookie-modal-head">
               <h2>Cookie Preferences</h2>
-              <button className="cookie-close" onClick={() => setShowSettings(false)} aria-label="Close">×</button>
+              <button className="cookie-close" onClick={() => setShowSettings(false)} aria-label="Close">x</button>
             </div>
             <p className="cookie-modal-desc">
               Manage your cookie preferences. Essential cookies are always enabled.

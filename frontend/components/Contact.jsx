@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 export default function Contact() {
   const onImgError = (e) => {
     e.currentTarget.style.display = 'none';
@@ -11,29 +13,26 @@ export default function Contact() {
       <div className="wrap">
         <div className="talk-box reveal">
           <div className="talk-img">
-            <img
-              src="https://Bpract.com/wp-content/uploads/2023/08/chatHr.webp"
+            <Image
+              src="https://bpract.com/wp-content/uploads/2023/08/chatHr.webp"
               alt=""
-              width="90"
+              width={90}
+              height={90}
               onError={onImgError}
             />
           </div>
           <div className="talk-cnt">
-            <b>Let's discuss about your idea!</b>
+            <b>Let&apos;s discuss about your idea!</b>
             <div className="talk-links">
               <a href="mailto:info@zcodez.com">info@zcodez.com</a>
               <a href="https://wa.me/918129184448" target="_blank">+91 81291 84448</a>
             </div>
           </div>
           <div className="talk-act">
-            <a href="https://wa.me/918129184448" target="_blank" className="btn btn-g"><span>Let's Talk</span></a>
+            <a href="https://wa.me/918129184448" target="_blank" className="btn btn-g"><span>Let&apos;s Talk</span></a>
           </div>
         </div>
       </div>
     </section>
   );
 }
-
-
-
-

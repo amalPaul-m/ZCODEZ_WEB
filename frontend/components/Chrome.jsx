@@ -1,6 +1,9 @@
+import Link from 'next/link';
+
 export default function Chrome() {
   return (
-    <>      <button id="scrollTop" aria-label="Top"><svg className="icon icon-stroke" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5" /><path d="M6 11l6-6 6 6" /></svg></button>
+    <>
+      <button id="scrollTop" aria-label="Top"><svg className="icon icon-stroke" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5" /><path d="M6 11l6-6 6 6" /></svg></button>
 
       <div className="social-bar" id="socialBar">
         <ul>
@@ -20,11 +23,11 @@ export default function Chrome() {
         <p className="panel-title">Do you have an idea in your mind?</p>
         <p className="panel-para">Any concept or idea should find its way. Whether you are a start-up or an established firm, you can share your ideas and perspectives with us. We ensure our guidance.</p>
         <div className="panel-links">
-          <a href="/#about">Credo</a>
-          <a href="/#services">Capabilities</a>
-          <a href="/#ai">Products</a>
-          <a href="/#why">Careers</a>
-          <a href="/#cta">Get in Touch</a>
+          <Link href="/#about">Credo</Link>
+          <Link href="/#services">Capabilities</Link>
+          <Link href="/#ai">Products</Link>
+          <Link href="/#why">Careers</Link>
+          <Link href="/#cta">Get in Touch</Link>
         </div>
         <div className="panel-contact">
           <b>Get in touch with us</b>
@@ -72,9 +75,3 @@ export default function Chrome() {
     </>
   );
 }
-
-
-
-
-
-

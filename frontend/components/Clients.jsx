@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 export default function Clients() {
   const fallbackStyle = {
     fontFamily: 'Montserrat, sans-serif',
@@ -22,33 +24,41 @@ export default function Clients() {
         <p className="clients-lbl">Trusted by businesses worldwide</p>
         <div className="clients-row">
           <div className="clients-item">
-            <img
+            <Image
               src="https://bpract.com/wp-content/uploads/2023/03/cleint1.webp"
               alt="Client 1"
+              width={160}
+              height={60}
               onError={onImgError}
             />
             <span style={fallbackStyle}>TechCorp</span>
           </div>
           <div className="clients-item">
-            <img
+            <Image
               src="https://bpract.com/wp-content/uploads/2023/03/cleint2.webp"
               alt="Client 2"
+              width={160}
+              height={60}
               onError={onImgError}
             />
             <span style={fallbackStyle}>GlobalMart</span>
           </div>
           <div className="clients-item">
-            <img
+            <Image
               src="https://bpract.com/wp-content/uploads/2023/03/cleint3.webp"
               alt="Client 3"
+              width={160}
+              height={60}
               onError={onImgError}
             />
             <span style={fallbackStyle}>InnovateCo</span>
           </div>
           <div className="clients-item">
-            <img
+            <Image
               src="https://bpract.com/wp-content/uploads/2023/03/cleint4.webp"
               alt="Campuslog"
+              width={160}
+              height={60}
               onError={onImgError}
             />
             <span style={fallbackStyle}>Campuslog</span>
@@ -58,7 +68,3 @@ export default function Clients() {
     </section>
   );
 }
-
-
-
-
