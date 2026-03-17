@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "open-next build",
+    "build": "next build",
+    "open-next:build": "open-next build",
+    "pages:build": "next build && open-next build",
     "next:build": "next build",
     "dev": "next dev",
     "start": "next start",
