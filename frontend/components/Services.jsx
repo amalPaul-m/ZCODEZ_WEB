@@ -50,7 +50,7 @@ export default function Services() {
 
       <div className="wrap">
         <div className="reveal">
-          <span className="sec-tag">What We Do</span>
+          {/* <span className="sec-tag">What We Do</span> */}
           <h2 className="sec-h">Services<span className="grad">.</span></h2>
         </div>
 

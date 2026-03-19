@@ -3,7 +3,7 @@ export default function TermsPage() {
   return (
     <main className="legal">
       <div className="wrap">
-        <h1 className="legal-title">Terms of Use</h1>
+        <h1 className="legal-title" style={{ color: '#3498db' }}>Terms of Use</h1>
         <p className="legal-intro">
           The users and the visitors to the Website ("You") are bound by the terms and conditions ("Terms") set out herein. These Terms will be deemed to have been accepted by you on usage of the Website. You are requested to read the Terms carefully before you progress beyond this page of the Website. Our Privacy Policy together with these Terms govern your use of this Website and personal data if any that you may provide to us through this Website. If you do not agree with these Terms then you are requested to immediately exit the Website.
         </p>
@@ -111,3 +111,4 @@ export default function TermsPage() {
     </main>
   );
 }
+

@@ -6,6 +6,8 @@ export default function Contact() {
   const onImgError = (e) => {
     e.currentTarget.style.display = 'none';
   };
+  const whatsappHref =
+    'https://wa.me/13468719427';
 
   return (
     <section className="sec sec-alt" id="cta">
@@ -25,11 +27,11 @@ export default function Contact() {
             <b>Let&apos;s discuss about your idea!</b>
             <div className="talk-links">
               <a href="mailto:info@zcodez.com">info@zcodez.com</a>
-              <a href="https://wa.me/918129184448" target="_blank">+91 81291 84448</a>
+              <a href="tel:+917034313431">+91 70 3431 3431</a>
             </div>
           </div>
           <div className="talk-act">
-            <a href="https://wa.me/918129184448" target="_blank" className="btn btn-g"><span>Let&apos;s Talk</span></a>
+            <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="btn btn-g"><span>Let&apos;s Talk</span></a>
           </div>
         </div>
       </div>

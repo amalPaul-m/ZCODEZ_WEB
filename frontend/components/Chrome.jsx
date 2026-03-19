@@ -8,7 +8,15 @@ export default function Chrome() {
       <div className="social-bar" id="socialBar">
         <ul>
           <li><a href="https://www.facebook.com/zcodez/" target="_blank">f</a></li>
-          <li><a href="https://www.instagram.com/zcodez/" target="_blank">ig</a></li>
+          <li>
+            <a href="https://www.instagram.com/zcodez/" target="_blank" aria-label="Instagram">
+              <svg className="icon icon-stroke" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5" ry="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" className="icon-fill" />
+              </svg>
+            </a>
+          </li>
           <li><a href="https://twitter.com/zcodez" target="_blank">x</a></li>
           <li><a href="https://in.linkedin.com/company/zcodez-software-solutions-llp" target="_blank">in</a></li>
           <li><span className="lbl">Follow</span></li>
@@ -19,7 +27,7 @@ export default function Chrome() {
 
       <aside className="side-panel" id="sidePanel">
         <button className="panel-close" id="panelClose" aria-label="Close"><svg className="icon icon-stroke" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12" /><path d="M18 6l-12 12" /></svg></button>
-        <div className="panel-logo">b<span className="grad">pract</span></div>
+        <Link href="/" className="panel-logo" aria-label="Go to home page">b<span className="grad">pract</span></Link>
         <p className="panel-title">Do you have an idea in your mind?</p>
         <p className="panel-para">Any concept or idea should find its way. Whether you are a start-up or an established firm, you can share your ideas and perspectives with us. We ensure our guidance.</p>
         <div className="panel-links">
@@ -32,7 +40,7 @@ export default function Chrome() {
         <div className="panel-contact">
           <b>Get in touch with us</b>
           <a href="mailto:info@zcodez.com">info@zcodez.com</a>
-          <a href="https://wa.me/918590137119" target="_blank">+91 8590137119</a>
+          <a href="https://wa.me/13468719427" target="_blank">+1 346 871 9427</a>
         </div>
         <div className="panel-addr">
           <b>zcodez Software Solutions LLP</b>
@@ -75,3 +83,5 @@ export default function Chrome() {
     </>
   );
 }
+
+

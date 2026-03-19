@@ -47,30 +47,11 @@ export default function Hero() {
           <span>Scroll</span>
         </div>
       </section>
-
-      <div className="marquee-bar parallax" data-speed="0.03">
-        <div className="marquee-track">
-          <div className="marquee-item">Web Development</div>
-          <div className="marquee-item">Mobile Apps</div>
-          <div className="marquee-item">UI/UX Design</div>
-          <div className="marquee-item">Digital Marketing</div>
-          <div className="marquee-item">AI Solutions</div>
-          <div className="marquee-item">Cloud Services</div>
-          <div className="marquee-item">Software Development</div>
-          <div className="marquee-item">CMS Development</div>
-          <div className="marquee-item">Web Development</div>
-          <div className="marquee-item">Mobile Apps</div>
-          <div className="marquee-item">UI/UX Design</div>
-          <div className="marquee-item">Digital Marketing</div>
-          <div className="marquee-item">AI Solutions</div>
-          <div className="marquee-item">Cloud Services</div>
-          <div className="marquee-item">Software Development</div>
-          <div className="marquee-item">CMS Development</div>
-        </div>
-      </div>
     </>
   );
 }
+
+
 
 
 

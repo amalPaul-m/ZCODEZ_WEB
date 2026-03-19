@@ -6,7 +6,6 @@ import Services from '../components/Services';
 import AIEnablement from '../components/AIEnablement';
 import WhyChooseUs from '../components/WhyChooseUs';
 import Contact from '../components/Contact';
-import AICompany from '../components/AICompany';
 import Testimonials from '../components/Testimonials';
 import Clients from '../components/Clients';
 import Gallery from '../components/Gallery';
@@ -24,7 +23,6 @@ export default function Page() {
       <AIEnablement />
       <WhyChooseUs />
       <Contact />
-      <AICompany />
       <Testimonials />
       <Clients />
       <Gallery />
@@ -33,3 +31,4 @@ export default function Page() {
     </>
   );
 }
+

@@ -3,7 +3,7 @@ export default function PrivacyPage() {
   return (
     <main className="legal">
       <div className="wrap">
-        <h1 className="legal-title">Privacy Policy</h1>
+        <h1 className="legal-title" style={{ color: '#3498db' }}>Privacy Policy</h1>
         <p className="legal-intro">
           This Privacy policy is subject to the Terms of Use of http://www.paymykart.com (the "Website"). The Website is owned and operated by ZCODEZ Technologies Pvt Ltd.
         </p>
@@ -127,3 +127,4 @@ export default function PrivacyPage() {
     </main>
   );
 }
+

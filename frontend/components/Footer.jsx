@@ -1,8 +1,11 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
   const onLogoError = (e) => {
     e.currentTarget.style.display = 'none';
     const txt = document.getElementById('flt');
@@ -19,15 +22,17 @@ export default function Footer() {
       <div className="wrap">
         <div className="footer-grid">
           <div className="footer-col">
-            <Image
-              className="footer-logo-img"
-              src="https://res.cloudinary.com/dfig2zrrd/image/upload/v1773466147/zcodez-logo_sm4lnr.png"
-              alt="zcodez"
-              width={180}
-              height={56}
-              onError={onLogoError}
-            />
-            <div className="footer-logo-txt is-hidden" id="flt">b<span className="grad">pract</span></div>
+            <Link href="/" className="footer-logo-link" aria-label="Go to home page">
+              <Image
+                className="footer-logo-img"
+                src="https://res.cloudinary.com/dfig2zrrd/image/upload/v1773466147/zcodez-logo_sm4lnr.png"
+                alt="zcodez"
+                width={180}
+                height={56}
+                onError={onLogoError}
+              />
+              <div className="footer-logo-txt is-hidden" id="flt">b<span className="grad">pract</span></div>
+            </Link>
             <p className="footer-tag">&quot;The term &apos;zcodez&apos; is the quintessence of &apos;being practical with best practices&apos;, and with this vision, zcodez has been growing fast ever since its inception in 2015.&quot;</p>
             <div className="footer-contacts">
               <div className="fc-item">
@@ -36,7 +41,8 @@ export default function Footer() {
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.9.31 1.77.57 2.61a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.47-1.09a2 2 0 0 1 2.11-.45c.84.26 1.71.45 2.61.57a2 2 0 0 1 1.72 2z" className="icon-stroke" />
                   </svg>
                 </span>
-                <a href="https://wa.me/918590137119" target="_blank">+91 8590137119</a>
+                <a href="https://wa.me/13468719427" target="_blank">+1 3468719427</a>
+                <a href="tel:+917034313431">+91 70 3431 3431</a>
               </div>
               <div className="fc-item">
                 <span className="fc-icon">
@@ -54,32 +60,33 @@ export default function Footer() {
                     <circle cx="12" cy="11" r="2" className="icon-stroke" />
                   </svg>
                 </span>
-                <span>Unit 1A, 4th floor, KSITIL, Special Economic Zone, Cyberpark Campus, Sahya building, Nellikkode P.O, Kozhikode, 673016</span>
+                <span><b>INDIA : </b>18/4, JK Center, Vendore - Tollgate, Thrissur, KERALA - 680302<br />
+                <span><b>USA : </b>2433 FM 1092 Road, Missouri City, TX 77459</span></span>
+                
               </div>
             </div>
           </div>
           <div className="footer-col">
             <h5>Services</h5>
             <div className="footer-links">
-              <a href="#">Web Design &amp; Development</a>
-              <a href="#">Digital Marketing</a>
-              <a href="#">Apps Development</a>
-              <a href="#">Software Development</a>
-              <a href="#">Custom CMS Development</a>
-              <a href="#">UI/UX Design</a>
+              <a href="#">Product Engineering</a>
+              <a href="#">SAP & Salesforce</a>
+              <a href="#">Data Science & AI</a>
+              <a href="#">Cyber Security</a>
+              <a href="#">Cloud & DevOps</a>
+              <a href="#">eCommerce</a>
+              <a href="#">Blockchain</a>
+              <a href="#">Multi Level Marketing</a>
             </div>
           </div>
           <div className="footer-col">
             <h6>Company</h6>
             <div className="footer-links">
-              <a href="#">zcodez Academy</a>
-              <a href="#">What we do</a>
-              <a href="#">Who we are</a>
-              <a href="#">Team</a>
+              <a href="#">Credo</a>
+              <a href="#">Capabilities</a>
+              <a href="#">Products</a>
               <a href="#">Careers</a>
-              <a href="#">Blogs</a>
-              <a href="#">Reach us</a>
-              <a href="#">Life at zcodez</a>
+              <a href="#">Get in Touch</a>
             </div>
           </div>
           <div className="footer-col">
@@ -98,13 +105,19 @@ export default function Footer() {
           <a href="/privacy">Privacy policy</a>
           <a href="/terms">Terms &amp; Conditions</a>
           <a href="#">Sitemap</a>
-          <a href="#">Download company brochure</a>
+          {/* <a href="#">Download company brochure</a> */}
         </div>
         <div className="footer-bar">
-          <div className="footer-copy">Â© 2025 All rights reserved by zcodez Software Solutions LLP.</div>
+          <div className="footer-copy">&copy; {currentYear} All rights reserved by zcodez LLP.</div>
           <div className="footer-socials">
             <a href="https://www.facebook.com/zcodez/" target="_blank">f</a>
-            <a href="https://www.instagram.com/zcodez/" target="_blank">ig</a>
+            <a href="https://www.instagram.com/zcodez/" target="_blank" aria-label="Instagram">
+              <svg className="icon icon-stroke" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5" ry="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" className="icon-fill" />
+              </svg>
+            </a>
             <a href="https://twitter.com/zcodez" target="_blank">x</a>
             <a href="https://in.linkedin.com/company/zcodez-software-solutions-llp" target="_blank">in</a>
           </div>
@@ -113,3 +126,6 @@ export default function Footer() {
     </footer>
   );
 }
+
+
+

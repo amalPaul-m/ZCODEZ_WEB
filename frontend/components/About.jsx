@@ -32,31 +32,26 @@ export default function About() {
                 <circle className="bc" cx="145" cy="140" r="85" />
               </g>
             </svg>
-            <h2 className="intro-head about-intro-title">Web &amp; Software Development Company</h2>
+            <h2 className="intro-head about-intro-title link-blue">Empowering Businesses Through Intelligent Transformation</h2>
             <p className="about-intro-p">
-              At ZCODEZ LLP, we transform complex challenges into elegant, scalable software solutions. As a dedicated technology partnership, we bridge the gap between visionary ideas and robust digital reality. We are the right fit for companies seeking digital tranformation with cutting edge AI.
+              At ZCODEZ, we are more than just consultants—we are your strategic partners in digital evolution. Founded with a vision to bridge the gap between complex enterprise technology and practical business solutions, we specialize in delivering world-class ERP implementation, AI-driven innovation, and expert consulting services.
             </p>
           </div>
           <div className="reveal d2 about-sub">
+            <p> <b>Enterprise ERP Implementation</b></p>
             <p>
-              We believe technology should be a powerful enabler, not a bottleneck. Whether you’re a startup seeking a Minimum Viable Product (MVP), a growing business needing to modernize legacy systems, or an enterprise pursuing innovation, we provide the technical expertise and collaborative spirit to guide your journey.
-              Our Promise: To deliver intelligent software engineered for performance, built with precision, and designed for the future.            </p>
+              We help businesses streamline operations through seamless implementation of industry-leading platforms including SAP, Salesforce, and Workday. From initial planning to go-live and beyond, our experts ensure your ERP investment delivers maximum ROI.              </p>
+          </div><div className="reveal d2 about-sub">
+            <p> <b>AI-Driven Projects</b></p>
+            <p>
+              The future is intelligent. We develop and implement cutting-edge Artificial Intelligence solutions that automate processes, unlock insights from your data, and give your business a competitive edge. Whether it's process automation, predictive analytics, or intelligent document processing, we turn AI potential into business reality.</p>
           </div>
           <div className="reveal d2 about-sub">
-            <p><b>Why Partner With ZCODEZ LLP?</b></p>
+            <p> <b>Strategic Consulting</b></p>
             <p>
-              <b>Strategic Partnership:</b> We act as your dedicated technology team, invested in your long-term growth.            
-            </p>
-            <p>
-              <b>Full-Cycle Expertise:</b> From concept and design to development, deployment, and ongoing support.            
-            </p>
-            <p>
-              <b>Agile & Transparent:</b> Collaborative processes with clear communication at every milestone.
-            </p>
-            <p>
-              <b>Quality-Centric Approach:</b> Commitment to secure, maintainable, and well-documented code.
-            </p>
+              Navigating digital transformation requires expert guidance. Our seasoned consultants provide strategic advisory services that align technology investments with your unique business goals, ensuring every decision drives growth and efficiency.</p>
           </div>
+
         </div>
       </section>
 
@@ -64,7 +59,7 @@ export default function About() {
         <div className="wrap">
           <div className="stats reveal">
             <div className="stat">
-              <div className="stat-n" data-to="8" data-sfx="+">0+</div>
+              <div className="stat-n" data-to="15" data-sfx="+">0+</div>
               <div className="stat-l">Years of<br />Experience<span className="gd">.</span></div>
             </div>
             <div className="stat">
@@ -85,6 +80,7 @@ export default function About() {
     </>
   );
 }
+
 
 
 
