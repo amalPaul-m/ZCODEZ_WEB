@@ -22,9 +22,6 @@ export default function Navbar() {
             height={55}
             onError={onLogoError}
           />
-          <span className="nav-logo-text is-hidden" id="navLogoTxt">
-            b<span className="grad">pract</span>
-          </span>
         </Link>
 
         <ul className="nav-links">

@@ -27,7 +27,7 @@ export default function Chrome() {
 
       <aside className="side-panel" id="sidePanel">
         <button className="panel-close" id="panelClose" aria-label="Close"><svg className="icon icon-stroke" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12" /><path d="M18 6l-12 12" /></svg></button>
-        <Link href="/" className="panel-logo" aria-label="Go to home page">b<span className="grad">pract</span></Link>
+        {/* <Link href="/" className="panel-logo" aria-label="Go to home page">b<span className="grad">pract</span></Link> */}
         <p className="panel-title">Do you have an idea in your mind?</p>
         <p className="panel-para">Any concept or idea should find its way. Whether you are a start-up or an established firm, you can share your ideas and perspectives with us. We ensure our guidance.</p>
         <div className="panel-links">
@@ -41,13 +41,13 @@ export default function Chrome() {
           <b>Get in touch with us</b>
           <a href="mailto:info@zcodez.com">info@zcodez.com</a>
           <a href="https://wa.me/13468719427" target="_blank">+1 346 871 9427</a>
+          <a href="tel:+917034313431" target="_blank">+91 70 3431 3431</a>
         </div>
         <div className="panel-addr">
-          <b>zcodez Software Solutions LLP</b>
-          Unit 1A, 4th floor, KSITIL,<br />
-          Special Economic Zone, Cyberpark Campus,<br />
-          Sahya building, Nillikkode P.O,<br />
-          Kozhikode, 673017
+          <b>ZCODEZ LLP</b>
+          INDIA : 18/4, JK Center, Vendore - Tollgate, Thrissur, KERALA - 680302<br />
+          USA : 2433 FM 1092 Road, Missouri City, TX 77459
+          
         </div>
         <div className="panel-socials">
           <a href="https://www.facebook.com/zcodez/" target="_blank">f</a>

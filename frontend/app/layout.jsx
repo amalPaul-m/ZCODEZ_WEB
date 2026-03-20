@@ -16,9 +16,20 @@ const poppins = Poppins({
   display: 'swap'
 });
 
+const zcodezLogoIcon = 'https://res.cloudinary.com/dfig2zrrd/image/upload/v1773466147/zcodez-logo_sm4lnr.png';
+
 export const metadata = {
   title: 'Software Development Company in India | zcodez',
-  description: 'zcodez Software Solutions LLP for software development, design, and digital services.'
+  description: 'zcodez Software Solutions LLP for software development, design, and digital services.',
+  icons: {
+    icon: [
+      { url: zcodezLogoIcon, type: 'image/png' }
+    ],
+    shortcut: [zcodezLogoIcon],
+    apple: [
+      { url: zcodezLogoIcon, type: 'image/png' }
+    ]
+  }
 };
 
 export const viewport = {

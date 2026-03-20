@@ -1,4 +1,25 @@
+import Image from 'next/image';
+
 export default function Hero() {
+  const brandLogos = [
+    {
+      src: 'https://res.cloudinary.com/dfig2zrrd/image/upload/v1773996629/New_Project_3_nyfugd.png',
+      alt: 'TechCorp logo'
+    },
+    {
+      src: 'https://res.cloudinary.com/dfig2zrrd/image/upload/v1773996628/New_Project_1_fyv07m.png',
+      alt: 'GlobalMart logo'
+    },
+    {
+      src: 'https://res.cloudinary.com/dfig2zrrd/image/upload/v1773996628/New_Project_2_apyqil.png',
+      alt: 'InnovateCo logo'
+    },
+    {
+      src: 'https://res.cloudinary.com/dfig2zrrd/image/upload/v1773996628/New_Project_z63npq.png',
+      alt: 'Campuslog logo'
+    }
+  ];
+
   return (
     <>
       <section id="hero">
@@ -31,12 +52,24 @@ export default function Hero() {
                 </h1> */}
 
                 <h1 className="h-title hero-title-text">
-                  <span className="w" style={{ fontFamily: "Outfit", fontWeight: '800', letterSpacing: '0.01em' }}>
+                  <span className="w" style={{ fontFamily: 'Outfit', fontWeight: '800', letterSpacing: '0.01em' }}>
                     Simplifying IT Consulting, Outsourcing & Development
                   </span>
                 </h1>
                 <p className="hero-bottom-note">Revolutionizing Future Digitally</p>
                 <a href="/contact" className="btn btn-g hero-cta-button"><span>LETS HERE YOUR IDEAS</span></a>
+                <div className="hero-brand-row" aria-label="Brand logos">
+                  {brandLogos.map((brand) => (
+                    <div className="hero-brand-item" key={brand.alt}>
+                      <Image
+                        src={brand.src}
+                        alt={brand.alt}
+                        width={96}
+                        height={28}
+                      />
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -50,14 +83,3 @@ export default function Hero() {
     </>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
