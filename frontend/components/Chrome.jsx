@@ -1,3 +1,5 @@
+﻿// File Purpose: Provides shared chrome UI elements like social bar, side panel, and scroll-to-top button.
+
 import Link from 'next/link';
 
 export default function Chrome() {
@@ -5,7 +7,7 @@ export default function Chrome() {
     <>
       <button id="scrollTop" aria-label="Top"><svg className="icon icon-stroke" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5" /><path d="M6 11l6-6 6 6" /></svg></button>
 
-      <div className="social-bar fixed left-0 top-1/2 z-[800] -translate-y-1/2" id="socialBar">
+      <div className="social-bar fixed left-0 z-[800] -translate-y-1/2" id="socialBar">
         <ul>
           <li><a href="https://www.facebook.com/zcodez/" target="_blank">f</a></li>
           <li>
@@ -89,6 +91,7 @@ export default function Chrome() {
     </>
   );
 }
+
 
 
 

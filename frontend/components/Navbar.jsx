@@ -1,4 +1,6 @@
-'use client';
+﻿'use client';
+// File Purpose: Defines the top navigation bar, theme toggle, and primary quick actions.
+
 
 import Image from 'next/image';
 import Link from 'next/link';
@@ -51,6 +53,7 @@ export default function Navbar() {
     </nav>
   );
 }
+
 
 
 

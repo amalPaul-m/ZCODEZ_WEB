@@ -1,4 +1,6 @@
 ﻿'use client';
+// File Purpose: Handles cookie consent banner display, preference state, and user actions.
+
 
 import { useEffect, useState } from 'react';
 
@@ -126,3 +128,4 @@ export default function CookieBanner() {
     </>
   );
 }
+

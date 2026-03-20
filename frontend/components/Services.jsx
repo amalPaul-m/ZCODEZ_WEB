@@ -1,4 +1,6 @@
-'use client';
+﻿'use client';
+// File Purpose: Shows service offerings with cards, descriptions, and navigation links.
+
 
 import Image from 'next/image';
 import Link from 'next/link';
@@ -92,3 +94,4 @@ export default function Services() {
     </section>
   );
 }
+

@@ -1,4 +1,6 @@
-'use client';
+﻿'use client';
+// File Purpose: Renders the all-services page and initializes client-side page behavior.
+
 
 import { useEffect } from 'react';
 import Chrome from '../../components/Chrome';
@@ -11,7 +13,7 @@ const allServices = [
     id: 1,
     title: 'Product Engineering',
     details:
-      'Design, build, and scale cutting-edge digital products with end-to-end engineering—from concept to deployment. We deliver innovative, high-performance solutions tailored to your vision. Engineered for innovation. Built for growth.',
+      'Design, build, and scale cutting-edge digital products with end-to-end engineeringâ€”from concept to deployment. We deliver innovative, high-performance solutions tailored to your vision. Engineered for innovation. Built for growth.',
   },
   {
     id: 2,
@@ -29,7 +31,7 @@ const allServices = [
     id: 4,
     title: 'Cyber Security',
     details:
-      'Protect your business with end-to-end security solutions—threat detection, vulnerability assessments, penetration testing, and compliance. We safeguard your data, networks, and cloud infrastructure from evolving cyber threats. Secure Today. Resilient Tomorrow.',
+      'Protect your business with end-to-end security solutionsâ€”threat detection, vulnerability assessments, penetration testing, and compliance. We safeguard your data, networks, and cloud infrastructure from evolving cyber threats. Secure Today. Resilient Tomorrow.',
   },
   {
     id: 5,
@@ -91,3 +93,4 @@ export default function ServicesPage() {
     </>
   );
 }
+

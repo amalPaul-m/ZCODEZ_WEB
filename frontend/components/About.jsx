@@ -1,3 +1,5 @@
+﻿// File Purpose: Renders the About/Credo section content and layout blocks on the home page.
+
 export default function About() {
   return (
     <>
@@ -34,7 +36,7 @@ export default function About() {
             </svg>
             <h2 className="intro-head about-intro-title link-blue">Empowering Businesses Through Intelligent Transformation</h2>
             <p className="about-intro-p">
-              At ZCODEZ, we are more than just consultants—we are your strategic partners in digital evolution. Founded with a vision to bridge the gap between complex enterprise technology and practical business solutions, we specialize in delivering world-class ERP implementation, AI-driven innovation, and expert consulting services.
+              At ZCODEZ, we are more than just consultantsâ€”we are your strategic partners in digital evolution. Founded with a vision to bridge the gap between complex enterprise technology and practical business solutions, we specialize in delivering world-class ERP implementation, AI-driven innovation, and expert consulting services.
             </p>
           </div>
           <div className="reveal d2 about-sub mx-auto text-center">
@@ -80,6 +82,7 @@ export default function About() {
     </>
   );
 }
+
 
 
 

@@ -1,4 +1,5 @@
-/* eslint-disable react/no-unescaped-entities */
+﻿/* eslint-disable react/no-unescaped-entities */
+// File Purpose: Renders the privacy policy page content and legal formatting.
 export default function PrivacyPage() {
   return (
     <main className="legal">
@@ -127,4 +128,5 @@ export default function PrivacyPage() {
     </main>
   );
 }
+
 

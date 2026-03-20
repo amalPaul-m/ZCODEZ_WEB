@@ -1,4 +1,6 @@
 ﻿'use client';
+// File Purpose: Runs client-only UI behaviors and DOM interactions used across the landing page.
+
 
 import { useEffect } from 'react';
 
@@ -229,6 +231,7 @@ export default function ClientScripts() {
 
   return null;
 }
+
 
 
 

@@ -1,3 +1,5 @@
+﻿// File Purpose: Renders the homepage hero area, title, CTA, and brand logo row.
+
 import Image from 'next/image';
 
 export default function Hero() {
@@ -83,3 +85,4 @@ export default function Hero() {
     </>
   );
 }
+

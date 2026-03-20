@@ -1,8 +1,60 @@
-'use client';
+﻿'use client';
+// File Purpose: Shows the trusted clients/logo strip used as a marquee section.
+
 
 import Image from 'next/image';
 
 export default function Clients() {
+  const clients = [
+    {
+      src: 'https://res.cloudinary.com/dfig2zrrd/image/upload/v1774029492/Motherson_wdn07x.png',
+      alt: 'Client 1',
+      fallback: 'Motherson'
+    },
+    {
+      src: 'https://res.cloudinary.com/dfig2zrrd/image/upload/v1774029492/Farmart_ddklgl.png',
+      alt: 'Client 2',
+      fallback: 'Farmart'
+    },
+    {
+      src: 'https://res.cloudinary.com/dfig2zrrd/image/upload/v1774029492/OlivCare-1_u2v77p.png',
+      alt: 'Client 3',
+      fallback: 'OlivCare'
+    },
+    {
+      src: 'https://res.cloudinary.com/dfig2zrrd/image/upload/v1774029491/healthplix-2_mju4yz.png',
+      alt: 'Client 4',
+      fallback: 'healthplix'
+    },
+    {
+      src: 'https://res.cloudinary.com/dfig2zrrd/image/upload/v1774029491/ShipRocket_jnkluy.png',
+      alt: 'Client 5',
+      fallback: 'ShipRocket'
+    },
+    {
+      src: 'https://res.cloudinary.com/dfig2zrrd/image/upload/v1774029491/mulberri-2_ypew6g.png',
+      alt: 'Client 6',
+      fallback: 'mulberri'
+    },
+    {
+      src: 'https://res.cloudinary.com/dfig2zrrd/image/upload/v1774029491/Vegrow-1_m2obm2.png',
+      alt: 'Client 7',
+      fallback: 'Vegrow'
+    },
+    {
+      src: 'https://res.cloudinary.com/dfig2zrrd/image/upload/v1774029491/Unizon-2_izo802.png',
+      alt: 'Client 8',
+      fallback: 'Unizon'
+    },
+    {
+      src: 'https://res.cloudinary.com/dfig2zrrd/image/upload/v1774029491/JobBuzz_njyh08.png',
+      alt: 'Client 9',
+      fallback: 'JobBuzz'
+    }
+  ];
+
+  const marqueeClients = [...clients, ...clients];
+
   const fallbackStyle = {
     fontFamily: 'Montserrat, sans-serif',
     fontSize: '17px',
@@ -22,49 +74,28 @@ export default function Clients() {
     <section id="clients" className="relative">
       <div className="wrap mx-auto w-full">
         <p className="clients-lbl">Trusted by businesses worldwide</p>
-        <div className="clients-row flex items-center justify-between gap-8 overflow-x-auto">
-          <div className="clients-item flex shrink-0 items-center justify-center">
-            <Image
-              src="https://bpract.com/wp-content/uploads/2023/03/cleint1.webp"
-              alt="Client 1"
-              width={160}
-              height={60}
-              onError={onImgError}
-            />
-            <span style={fallbackStyle}>TechCorp</span>
-          </div>
-          <div className="clients-item flex shrink-0 items-center justify-center">
-            <Image
-              src="https://bpract.com/wp-content/uploads/2023/03/cleint2.webp"
-              alt="Client 2"
-              width={160}
-              height={60}
-              onError={onImgError}
-            />
-            <span style={fallbackStyle}>GlobalMart</span>
-          </div>
-          <div className="clients-item flex shrink-0 items-center justify-center">
-            <Image
-              src="https://bpract.com/wp-content/uploads/2023/03/cleint3.webp"
-              alt="Client 3"
-              width={160}
-              height={60}
-              onError={onImgError}
-            />
-            <span style={fallbackStyle}>InnovateCo</span>
-          </div>
-          <div className="clients-item flex shrink-0 items-center justify-center">
-            <Image
-              src="https://bpract.com/wp-content/uploads/2023/03/cleint4.webp"
-              alt="Campuslog"
-              width={160}
-              height={60}
-              onError={onImgError}
-            />
-            <span style={fallbackStyle}>Campuslog</span>
+        <div className="clients-marquee" aria-label="Brand logos marquee">
+          <div className="clients-marquee-track">
+            {marqueeClients.map((client, index) => (
+              <div
+                className="grayscale hover:grayscale-0 transition duration-300 clients-item clients-marquee-item flex shrink-0 items-center justify-center"
+                key={`${client.alt}-${index}`}
+              >
+                <Image
+                  src={client.src}
+                  alt={client.alt}
+                  width={160}
+                  height={60}
+                  className=""
+                  onError={onImgError}
+                />
+                <span style={fallbackStyle}>{client.fallback}</span>
+              </div>
+            ))}
           </div>
         </div>
       </div>
     </section>
   );
 }
+

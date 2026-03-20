@@ -1,3 +1,5 @@
+﻿// File Purpose: Defines the root app layout, global fonts, metadata, and shared wrappers.
+
 import './globals.css';
 import { Montserrat, Poppins } from 'next/font/google';
 import CookieBanner from '../components/CookieBanner';
@@ -47,3 +49,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+

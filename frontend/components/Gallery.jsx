@@ -1,4 +1,6 @@
-'use client';
+﻿'use client';
+// File Purpose: Displays the media/gallery showcase section with responsive imagery.
+
 
 import Image from 'next/image';
 
@@ -77,3 +79,4 @@ export default function Gallery() {
     </section>
   );
 }
+

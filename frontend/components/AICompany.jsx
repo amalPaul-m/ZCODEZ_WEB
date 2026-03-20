@@ -1,3 +1,5 @@
+﻿// File Purpose: Displays the AI company capability highlight section and supporting visuals.
+
 export default function AICompany() {
   return (
     <section className="sec" id="ai-company">
@@ -19,6 +21,7 @@ export default function AICompany() {
     </section>
   );
 }
+
 
 
 

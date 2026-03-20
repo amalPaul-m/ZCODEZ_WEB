@@ -1,4 +1,6 @@
-'use client';
+﻿'use client';
+// File Purpose: Renders client testimonial cards and related review UI.
+
 
 import Image from 'next/image';
 
@@ -43,7 +45,7 @@ export default function Testimonials() {
                   height={48}
                   onError={onImgError}
                 />
-                <div><div className="testi-name">Joe</div><div className="testi-role">CEO, CBT — New York</div></div>
+                <div><div className="testi-name">Joe</div><div className="testi-role">CEO, CBT â€” New York</div></div>
               </div>
             </div>
             <div className="testi-card flex h-full flex-col">
@@ -59,7 +61,7 @@ export default function Testimonials() {
                   height={48}
                   onError={onImgError}
                 />
-                <div><div className="testi-name">Juan Garcia</div><div className="testi-role">Cádiz — Spain</div></div>
+                <div><div className="testi-name">Juan Garcia</div><div className="testi-role">CÃ¡diz â€” Spain</div></div>
               </div>
             </div>
             <div className="testi-card flex h-full flex-col">
@@ -75,7 +77,7 @@ export default function Testimonials() {
                   height={48}
                   onError={onImgError}
                 />
-                <div><div className="testi-name">Javier Florez</div><div className="testi-role">Insys Communications — USA</div></div>
+                <div><div className="testi-name">Javier Florez</div><div className="testi-role">Insys Communications â€” USA</div></div>
               </div>
             </div>
             <div className="testi-card flex h-full flex-col">
@@ -91,7 +93,7 @@ export default function Testimonials() {
                   height={48}
                   onError={onImgError}
                 />
-                <div><div className="testi-name">Laura Fernandez</div><div className="testi-role">CEO at ACONITI Ltd — Madrid</div></div>
+                <div><div className="testi-name">Laura Fernandez</div><div className="testi-role">CEO at ACONITI Ltd â€” Madrid</div></div>
               </div>
             </div>
             <div className="testi-card flex h-full flex-col">
@@ -130,3 +132,4 @@ export default function Testimonials() {
     </section>
   );
 }
+

@@ -1,4 +1,6 @@
-'use client';
+﻿'use client';
+// File Purpose: Renders the contact/CTA section with communication channels and form entry points.
+
 
 import Image from 'next/image';
 
@@ -43,5 +45,6 @@ export default function Contact() {
     </section>
   );
 }
+
 
 

@@ -1,4 +1,6 @@
-'use client';
+﻿'use client';
+// File Purpose: Displays value propositions and reasons to choose the company.
+
 
 export default function WhyChooseUs() {
   return (
@@ -31,5 +33,6 @@ export default function WhyChooseUs() {
     </section>
   );
 }
+
 
 

@@ -1,3 +1,5 @@
+﻿// File Purpose: Processes contact form submissions and forwards them to the external webhook endpoint.
+
 import { NextResponse } from 'next/server';
 
 export async function POST(request) {
@@ -63,3 +65,4 @@ export async function POST(request) {
     return NextResponse.json({ ok: false, error: error.message }, { status: 500 });
   }
 }
+

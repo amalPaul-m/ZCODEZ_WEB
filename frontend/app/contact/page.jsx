@@ -1,4 +1,6 @@
-'use client';
+﻿'use client';
+// File Purpose: Implements the dedicated contact page and client-side form interactions.
+
 
 import { useState } from 'react';
 import Chrome from '../../components/Chrome';
@@ -190,3 +192,4 @@ export default function ContactPage() {
     </>
   );
 }
+

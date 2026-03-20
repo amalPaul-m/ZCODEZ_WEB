@@ -1,3 +1,5 @@
+﻿// File Purpose: Composes the main homepage from reusable section components.
+
 import Chrome from '../components/Chrome';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
@@ -31,4 +33,5 @@ export default function Page() {
     </>
   );
 }
+
 

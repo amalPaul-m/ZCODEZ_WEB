@@ -1,4 +1,6 @@
-'use client';
+﻿'use client';
+// File Purpose: Builds the site footer with company details, links, and branding.
+
 
 import Image from 'next/image';
 import Link from 'next/link';
@@ -126,6 +128,7 @@ export default function Footer() {
     </footer>
   );
 }
+
 
 
 

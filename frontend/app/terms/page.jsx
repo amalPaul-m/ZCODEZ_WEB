@@ -1,4 +1,5 @@
-/* eslint-disable react/no-unescaped-entities */
+﻿/* eslint-disable react/no-unescaped-entities */
+// File Purpose: Renders the terms-of-use page content and legal formatting.
 export default function TermsPage() {
   return (
     <main className="legal">
@@ -111,4 +112,5 @@ export default function TermsPage() {
     </main>
   );
 }
+
 

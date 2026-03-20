@@ -1,3 +1,5 @@
+﻿// File Purpose: Renders the AI enablement services section with cards and callouts.
+
 export default function AIEnablement() {
   return (
     <section className="sec sec-alt relative overflow-hidden" id="ai">
@@ -29,6 +31,7 @@ export default function AIEnablement() {
     </section>
   );
 }
+
 
 
 
