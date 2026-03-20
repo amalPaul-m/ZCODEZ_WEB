@@ -41,8 +41,8 @@ export default function Footer() {
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.9.31 1.77.57 2.61a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.47-1.09a2 2 0 0 1 2.11-.45c.84.26 1.71.45 2.61.57a2 2 0 0 1 1.72 2z" className="icon-stroke" />
                   </svg>
                 </span>
-                <a href="https://wa.me/13468719427" target="_blank">+1 3468719427</a>
-                <a href="tel:+917034313431">+91 70 3431 3431</a>
+                <span><b>INDIA : </b><a href="tel:+917034313431">+91 70 3431 3431</a></span>
+                <span><b>USA : </b><a href="https://wa.me/13468719427" target="_blank">+1 3468719427</a></span>
               </div>
               <div className="fc-item">
                 <span className="fc-icon">
@@ -119,7 +119,7 @@ export default function Footer() {
               </svg>
             </a>
             <a href="https://twitter.com/zcodez" target="_blank">x</a>
-            <a href="https://in.linkedin.com/company/zcodez-software-solutions-llp" target="_blank">in</a>
+            <a href="https://www.linkedin.com/company/97447919/admin/dashboard/" target="_blank">in</a>
           </div>
         </div>
       </div>

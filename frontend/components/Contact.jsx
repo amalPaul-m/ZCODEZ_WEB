@@ -27,7 +27,12 @@ export default function Contact() {
             <b>Let&apos;s discuss about your idea!</b>
             <div className="talk-links">
               <a href="mailto:info@zcodez.com">info@zcodez.com</a>
+              <span className="talk-sep">|</span>
+              <span className="talk-link-label">India:</span>
               <a href="tel:+917034313431">+91 70 3431 3431</a>
+              <span className="talk-sep">|</span>
+              <span className="talk-link-label">USA:</span>
+              <a href="https://wa.me/13468719427">+1 346 871 9427</a>
             </div>
           </div>
           <div className="talk-act">
@@ -38,3 +43,5 @@ export default function Contact() {
     </section>
   );
 }
+
+

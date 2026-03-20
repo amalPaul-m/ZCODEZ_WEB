@@ -18,7 +18,7 @@ export default function Chrome() {
             </a>
           </li>
           <li><a href="https://twitter.com/zcodez" target="_blank">x</a></li>
-          <li><a href="https://in.linkedin.com/company/zcodez-software-solutions-llp" target="_blank">in</a></li>
+          <li><a href="https://www.linkedin.com/company/97447919/admin/dashboard/" target="_blank">in</a></li>
           <li><span className="lbl">Follow</span></li>
         </ul>
       </div>
@@ -51,9 +51,15 @@ export default function Chrome() {
         </div>
         <div className="panel-socials">
           <a href="https://www.facebook.com/zcodez/" target="_blank">f</a>
-          <a href="https://www.instagram.com/zcodez/" target="_blank">ig</a>
+          <a href="https://www.instagram.com/zcodez/" target="_blank" aria-label="Instagram">
+            <svg className="icon icon-stroke" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" ry="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="1" className="icon-fill" />
+            </svg>
+          </a>
           <a href="https://twitter.com/zcodez" target="_blank">x</a>
-          <a href="https://in.linkedin.com/company/zcodez-software-solutions-llp" target="_blank">in</a>
+          <a href="https://www.linkedin.com/company/97447919/admin/dashboard/" target="_blank">in</a>
         </div>
         <div className="panel-blob">
           <svg viewBox="0 0 1255 1304" preserveAspectRatio="none" className="panel-blob-svg">
@@ -83,5 +89,6 @@ export default function Chrome() {
     </>
   );
 }
+
 
 
