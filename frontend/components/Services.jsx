@@ -36,7 +36,7 @@ const mainServices = [
 
 export default function Services() {
   return (
-    <section className="sec" id="services">
+    <section className="sec relative overflow-hidden" id="services">
       <div className="pbg" data-speed="0.4"></div>
       <svg className="spin-ring services-ring" viewBox="0 0 408 408">
         <defs>
@@ -48,16 +48,16 @@ export default function Services() {
         <circle cx="204" cy="204" r="190" fill="none" stroke="url(#rg1)" strokeWidth="28" opacity=".4" />
       </svg>
 
-      <div className="wrap">
+      <div className="wrap mx-auto w-full">
         <div className="reveal">
           {/* <span className="sec-tag">What We Do</span> */}
           <h2 className="sec-h">Services<span className="grad">.</span></h2>
         </div>
 
-        <div className="svc-layout">
-          <div className="svc-left reveal d1">
+        <div className="svc-layout flex flex-col gap-8 lg:flex-row">
+          <div className="svc-left reveal d1 w-full">
             {mainServices.map((svc) => (
-              <div className="svc-item" key={svc.id}>
+              <div className="svc-item flex items-start gap-4" key={svc.id}>
                 <div className="svc-n">{svc.id}</div>
                 <div>
                   <div className="svc-title">{svc.title}</div>
@@ -73,7 +73,7 @@ export default function Services() {
             </div>
           </div>
 
-          <div className="svc-right reveal d2">
+          <div className="svc-right reveal d2 relative w-full">
             {mainServices.map((svc, index) => (
               <div className={`svc-img ${index === 0 ? 'on' : ''}`} key={`svc-img-${svc.id}`}>
                 <Image

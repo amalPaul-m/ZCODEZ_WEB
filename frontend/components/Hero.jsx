@@ -22,9 +22,9 @@ export default function Hero() {
 
   return (
     <>
-      <section id="hero">
-        <div className="hero-video parallax" data-speed="0.08">
-          <video playsInline autoPlay muted loop>
+      <section id="hero" className="relative flex min-h-screen items-center overflow-hidden">
+        <div className="hero-video parallax absolute inset-0" data-speed="0.08">
+          <video className="block h-full w-full object-cover" playsInline autoPlay muted loop>
             {/* <source src="https://bpract.com/wp-content/themes/bpract/assets/video/intro.mp4" type="video/mp4" /> */}
             <source src="https://res.cloudinary.com/dfig2zrrd/video/upload/v1773509006/Office-Meeting_ua6swo.mp4" type="video/mp4" />
 
@@ -36,14 +36,14 @@ export default function Hero() {
         <div className="hero-orb orb-1 parallax" data-speed="0.18"></div>
         <div className="hero-orb orb-2 parallax" data-speed="0.12"></div>
 
-        <div className="hero-inner">
-          <div className="hero-row">
-            <div className="hero-left">
-              <p className="hero-top-note">We are</p>
+        <div className="hero-inner relative z-[3] mx-auto flex min-h-screen w-full max-w-[1340px] items-center">
+          <div className="hero-row flex w-full gap-12">
+            <div className="hero-left max-w-full">
+              <p className="hero-top-note text-xs uppercase tracking-[0.3em] md:text-sm">We are</p>
               <div className="hero-title-wrap parallax" data-speed="0.08">
                 <div className="hero-title-bg"></div>
 
-                {/* <h1 className="h-title hero-title-text">
+                {/* <h1 className="h-title hero-title-text text-balance">
                 <span className="w">S<span className="stroke">implifying</span></span>
                 <span className="w">IT Consulting,</span><br />
                 <span className="w hero-enterprise">Outsourcing</span><br />
@@ -51,16 +51,16 @@ export default function Hero() {
                 <span className="w stroke">Development&nbsp;</span><span className="w">Solutions</span>
                 </h1> */}
 
-                <h1 className="h-title hero-title-text">
+                <h1 className="h-title hero-title-text text-balance">
                   <span className="w" style={{ fontFamily: 'Outfit', fontWeight: '800', letterSpacing: '0.01em' }}>
                     Simplifying IT Consulting, Outsourcing & Development
                   </span>
                 </h1>
                 <p className="hero-bottom-note">Revolutionizing Future Digitally</p>
-                <a href="/contact" className="btn btn-g hero-cta-button"><span>LETS HERE YOUR IDEAS</span></a>
-                <div className="hero-brand-row" aria-label="Brand logos">
+                <a href="/contact" className="btn btn-g hero-cta-button inline-flex items-center justify-center"><span>LETS HERE YOUR IDEAS</span></a>
+                <div className="hero-brand-row grid w-full" aria-label="Brand logos">
                   {brandLogos.map((brand) => (
-                    <div className="hero-brand-item" key={brand.alt}>
+                    <div className="hero-brand-item flex items-center justify-center" key={brand.alt}>
                       <Image
                         src={brand.src}
                         alt={brand.alt}

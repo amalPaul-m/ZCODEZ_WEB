@@ -5,7 +5,7 @@ export default function Chrome() {
     <>
       <button id="scrollTop" aria-label="Top"><svg className="icon icon-stroke" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5" /><path d="M6 11l6-6 6 6" /></svg></button>
 
-      <div className="social-bar" id="socialBar">
+      <div className="social-bar fixed left-0 top-1/2 z-[800] -translate-y-1/2" id="socialBar">
         <ul>
           <li><a href="https://www.facebook.com/zcodez/" target="_blank">f</a></li>
           <li>
@@ -25,12 +25,12 @@ export default function Chrome() {
 
       <div className="panel-bg" id="panelBg"></div>
 
-      <aside className="side-panel" id="sidePanel">
+      <aside className="side-panel fixed right-0 top-0" id="sidePanel">
         <button className="panel-close" id="panelClose" aria-label="Close"><svg className="icon icon-stroke" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12" /><path d="M18 6l-12 12" /></svg></button>
         {/* <Link href="/" className="panel-logo" aria-label="Go to home page">b<span className="grad">pract</span></Link> */}
         <p className="panel-title">Do you have an idea in your mind?</p>
         <p className="panel-para">Any concept or idea should find its way. Whether you are a start-up or an established firm, you can share your ideas and perspectives with us. We ensure our guidance.</p>
-        <div className="panel-links">
+        <div className="panel-links flex flex-col">
           <Link href="/#about">Credo</Link>
           <Link href="/#services">Capabilities</Link>
           <Link href="/#ai">Products</Link>
@@ -49,7 +49,7 @@ export default function Chrome() {
           USA : 2433 FM 1092 Road, Missouri City, TX 77459
           
         </div>
-        <div className="panel-socials">
+        <div className="panel-socials flex items-center gap-2">
           <a href="https://www.facebook.com/zcodez/" target="_blank">f</a>
           <a href="https://www.instagram.com/zcodez/" target="_blank" aria-label="Instagram">
             <svg className="icon icon-stroke" viewBox="0 0 24 24" aria-hidden="true">

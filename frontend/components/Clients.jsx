@@ -19,11 +19,11 @@ export default function Clients() {
   };
 
   return (
-    <section id="clients">
-      <div className="wrap">
+    <section id="clients" className="relative">
+      <div className="wrap mx-auto w-full">
         <p className="clients-lbl">Trusted by businesses worldwide</p>
-        <div className="clients-row">
-          <div className="clients-item">
+        <div className="clients-row flex items-center justify-between gap-8 overflow-x-auto">
+          <div className="clients-item flex shrink-0 items-center justify-center">
             <Image
               src="https://bpract.com/wp-content/uploads/2023/03/cleint1.webp"
               alt="Client 1"
@@ -33,7 +33,7 @@ export default function Clients() {
             />
             <span style={fallbackStyle}>TechCorp</span>
           </div>
-          <div className="clients-item">
+          <div className="clients-item flex shrink-0 items-center justify-center">
             <Image
               src="https://bpract.com/wp-content/uploads/2023/03/cleint2.webp"
               alt="Client 2"
@@ -43,7 +43,7 @@ export default function Clients() {
             />
             <span style={fallbackStyle}>GlobalMart</span>
           </div>
-          <div className="clients-item">
+          <div className="clients-item flex shrink-0 items-center justify-center">
             <Image
               src="https://bpract.com/wp-content/uploads/2023/03/cleint3.webp"
               alt="Client 3"
@@ -53,7 +53,7 @@ export default function Clients() {
             />
             <span style={fallbackStyle}>InnovateCo</span>
           </div>
-          <div className="clients-item">
+          <div className="clients-item flex shrink-0 items-center justify-center">
             <Image
               src="https://bpract.com/wp-content/uploads/2023/03/cleint4.webp"
               alt="Campuslog"

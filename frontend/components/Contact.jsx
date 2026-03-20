@@ -10,10 +10,10 @@ export default function Contact() {
     'https://wa.me/13468719427';
 
   return (
-    <section className="sec sec-alt" id="cta">
+    <section className="sec sec-alt relative overflow-hidden" id="cta">
       <div className="pbg" data-speed="0.2"></div>
-      <div className="wrap">
-        <div className="talk-box reveal">
+      <div className="wrap mx-auto w-full">
+        <div className="talk-box reveal flex flex-col gap-6 md:flex-row md:items-center">
           <div className="talk-img">
             <Image
               src="https://bpract.com/wp-content/uploads/2023/08/chatHr.webp"
@@ -25,7 +25,7 @@ export default function Contact() {
           </div>
           <div className="talk-cnt">
             <b>Let&apos;s discuss about your idea!</b>
-            <div className="talk-links">
+            <div className="talk-links flex flex-wrap items-center gap-2">
               <a href="mailto:info@zcodez.com">info@zcodez.com</a>
               <span className="talk-sep">|</span>
               <span className="talk-link-label">India:</span>
@@ -36,7 +36,7 @@ export default function Contact() {
             </div>
           </div>
           <div className="talk-act">
-            <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="btn btn-g"><span>Let&apos;s Talk</span></a>
+            <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="btn btn-g inline-flex items-center justify-center"><span>Let&apos;s Talk</span></a>
           </div>
         </div>
       </div>

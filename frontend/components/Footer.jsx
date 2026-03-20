@@ -13,15 +13,15 @@ export default function Footer() {
   };
 
   return (
-    <footer>
+    <footer className="relative overflow-hidden">
       <div className="footer-vid">
         <video playsInline autoPlay muted loop>
           <source src="https://bpract.com/wp-content/themes/bpract/assets/video/bannergif.mp4" type="video/mp4" />
         </video>
       </div>
-      <div className="wrap">
-        <div className="footer-grid">
-          <div className="footer-col">
+      <div className="wrap mx-auto w-full">
+        <div className="footer-grid grid gap-10 md:grid-cols-2 xl:grid-cols-4">
+          <div className="footer-col min-w-0">
             <Link href="/" className="footer-logo-link" aria-label="Go to home page">
               <Image
                 className="footer-logo-img"
@@ -66,9 +66,9 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="footer-col">
+          <div className="footer-col min-w-0">
             <h5>Services</h5>
-            <div className="footer-links">
+            <div className="footer-links flex flex-col gap-2">
               <a href="#">Product Engineering</a>
               <a href="#">SAP & Salesforce</a>
               <a href="#">Data Science & AI</a>
@@ -79,9 +79,9 @@ export default function Footer() {
               <a href="#">Multi Level Marketing</a>
             </div>
           </div>
-          <div className="footer-col">
+          <div className="footer-col min-w-0">
             <h6>Company</h6>
-            <div className="footer-links">
+            <div className="footer-links flex flex-col gap-2">
               <a href="#">Credo</a>
               <a href="#">Capabilities</a>
               <a href="#">Products</a>
@@ -89,9 +89,9 @@ export default function Footer() {
               <a href="#">Get in Touch</a>
             </div>
           </div>
-          <div className="footer-col">
+          <div className="footer-col min-w-0">
             <h6>Products</h6>
-            <div className="footer-links">
+            <div className="footer-links flex flex-col gap-2">
               <a href="#">Affiliate Marketing Software</a>
               <a href="#">Project Management Software</a>
               <a href="#">Event Booking Software</a>
@@ -101,15 +101,15 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="footer-btm-links">
+        <div className="footer-btm-links flex flex-wrap items-center gap-4">
           <a href="/privacy">Privacy policy</a>
           <a href="/terms">Terms &amp; Conditions</a>
           <a href="#">Sitemap</a>
           {/* <a href="#">Download company brochure</a> */}
         </div>
-        <div className="footer-bar">
+        <div className="footer-bar flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div className="footer-copy">&copy; {currentYear} All rights reserved by zcodez LLP.</div>
-          <div className="footer-socials">
+          <div className="footer-socials flex items-center gap-2">
             <a href="https://www.facebook.com/zcodez/" target="_blank">f</a>
             <a href="https://www.instagram.com/zcodez/" target="_blank" aria-label="Instagram">
               <svg className="icon icon-stroke" viewBox="0 0 24 24" aria-hidden="true">

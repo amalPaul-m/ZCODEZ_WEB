@@ -2,11 +2,11 @@
 
 export default function WhyChooseUs() {
   return (
-    <section className="sec" id="why">
+    <section className="sec relative overflow-hidden" id="why">
       <div className="pbg" data-speed="0.35"></div>
 
-      <div className="wrap">
-        <div className="reveal why-center">
+      <div className="wrap mx-auto w-full">
+        <div className="reveal why-center mx-auto text-center">
           <span className="sec-tag">Careers</span>
           <h2 className="sec-h">Discover opportunities to shape your future<span className="link-blue">.</span></h2>
           <p className="sec-p">
@@ -15,7 +15,7 @@ export default function WhyChooseUs() {
         </div>
 
         <div className="reveal d1" style={{ textAlign: 'center', marginTop: '28px' }}>
-          <a href="#" className="btn btn-g">
+          <a href="#" className="btn btn-g inline-flex items-center justify-center gap-2">
             <span>Explore Careers</span>
             <svg className="btn-icon" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M5 12h14" className="icon-stroke" />

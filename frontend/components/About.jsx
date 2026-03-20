@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <>
-      <section className="sec sec-alt" id="about">
+      <section className="sec sec-alt relative overflow-hidden" id="about">
         <div className="pbg" data-speed="0.3"></div>
 
         <svg className="deco d1 about-deco-1" viewBox="0 0 14 14">
@@ -15,8 +15,8 @@ export default function About() {
           <circle cx="20" cy="20" r="5" fill="#3d77b5" />
         </svg>
 
-        <div className="wrap">
-          <div className="reveal about-intro">
+        <div className="wrap mx-auto w-full">
+          <div className="reveal about-intro mx-auto text-center">
             <svg className="blob-wrap" viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <filter id="goo1">
@@ -37,16 +37,16 @@ export default function About() {
               At ZCODEZ, we are more than just consultants—we are your strategic partners in digital evolution. Founded with a vision to bridge the gap between complex enterprise technology and practical business solutions, we specialize in delivering world-class ERP implementation, AI-driven innovation, and expert consulting services.
             </p>
           </div>
-          <div className="reveal d2 about-sub">
+          <div className="reveal d2 about-sub mx-auto text-center">
             <p> <b>Enterprise ERP Implementation</b></p>
             <p>
               We help businesses streamline operations through seamless implementation of industry-leading platforms including SAP, Salesforce, and Workday. From initial planning to go-live and beyond, our experts ensure your ERP investment delivers maximum ROI.              </p>
-          </div><div className="reveal d2 about-sub">
+          </div><div className="reveal d2 about-sub mx-auto text-center">
             <p> <b>AI-Driven Projects</b></p>
             <p>
               The future is intelligent. We develop and implement cutting-edge Artificial Intelligence solutions that automate processes, unlock insights from your data, and give your business a competitive edge. Whether it's process automation, predictive analytics, or intelligent document processing, we turn AI potential into business reality.</p>
           </div>
-          <div className="reveal d2 about-sub">
+          <div className="reveal d2 about-sub mx-auto text-center">
             <p> <b>Strategic Consulting</b></p>
             <p>
               Navigating digital transformation requires expert guidance. Our seasoned consultants provide strategic advisory services that align technology investments with your unique business goals, ensuring every decision drives growth and efficiency.</p>
@@ -56,8 +56,8 @@ export default function About() {
       </section>
 
       <section className="sec sec-alt sec-tight">
-        <div className="wrap">
-          <div className="stats reveal">
+        <div className="wrap mx-auto w-full">
+          <div className="stats reveal grid gap-0 md:grid-cols-2 xl:grid-cols-4">
             <div className="stat">
               <div className="stat-n" data-to="15" data-sfx="+">0+</div>
               <div className="stat-l">Years of<br />Experience<span className="gd">.</span></div>

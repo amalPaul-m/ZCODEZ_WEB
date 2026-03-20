@@ -1,6 +1,6 @@
-﻿export default function AIEnablement() {
+export default function AIEnablement() {
   return (
-    <section className="sec sec-alt" id="ai">
+    <section className="sec sec-alt relative overflow-hidden" id="ai">
       <div className="pbg" data-speed="0.25"></div>
       <svg className="deco d1 ai-deco-1" viewBox="0 0 14 14">
         <circle cx="7" cy="7" r="5" fill="#3f3db5" />
@@ -9,18 +9,18 @@
         <circle cx="18" cy="18" r="15" fill="none" stroke="#3db54a" strokeWidth="2" />
       </svg>
 
-      <div className="wrap">
-        <div className="reveal ai-center-740">
+      <div className="wrap mx-auto w-full">
+        <div className="reveal ai-center-740 mx-auto text-center">
           <h2 className="sec-h">AI Enablement Across Our<br /><span className="grad">Software Services</span></h2>
           <p className="sec-p">
             We integrate AI capabilities across our core software development offerings to help businesses improve efficiency, accuracy, and decision-making. Our approach focuses on practical use cases that strengthen existing systems rather than replacing them.
           </p>
         </div>
-        <div className="ai-grid reveal d1">
-          <div className="ai-card"><div className="ai-dot"></div><p>AI-powered automation for business applications</p></div>
-          <div className="ai-card"><div className="ai-dot"></div><p>Intelligent chatbots for websites and mobile apps</p></div>
-          <div className="ai-card"><div className="ai-dot"></div><p>Data analysis and reporting using machine learning models</p></div>
-          <div className="ai-card"><div className="ai-dot"></div><p>AI integrations with existing CRM, ERP, and custom systems</p></div>
+        <div className="ai-grid reveal d1 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+          <div className="ai-card flex items-start gap-3"><div className="ai-dot"></div><p>AI-powered automation for business applications</p></div>
+          <div className="ai-card flex items-start gap-3"><div className="ai-dot"></div><p>Intelligent chatbots for websites and mobile apps</p></div>
+          <div className="ai-card flex items-start gap-3"><div className="ai-dot"></div><p>Data analysis and reporting using machine learning models</p></div>
+          <div className="ai-card flex items-start gap-3"><div className="ai-dot"></div><p>AI integrations with existing CRM, ERP, and custom systems</p></div>
         </div>
         <div className="reveal d2 ai-center-680">
           <p className="sec-p">This approach allows businesses to adopt AI without disrupting their existing technology stack, ensuring stability, security, and scalability.</p>
